@@ -1,13 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.example.Client">
-  <grid id="27dc6" row-count="1" column-count="1" layout-manager="GridLayoutManager">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="clientPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
-      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+      <xy x="40" y="20" width="576" height="477"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-11889791"/>
+      <focusable value="false"/>
+      <font name="Monospaced"/>
+      <foreground color="-9443885"/>
+      <name value=""/>
+    </properties>
     <border type="none"/>
-    <children/>
+    <children>
+      <grid id="8d937" binding="loginPanel" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-15311013"/>
+          <font name="JetBrains Mono"/>
+          <foreground color="-7829368"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="290f2" class="javax.swing.JTextField" binding="usernameTextField">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-7829368"/>
+              <font name="JetBrains Mono" size="12"/>
+            </properties>
+          </component>
+          <component id="ab5ea" class="javax.swing.JLabel" binding="usernameLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-11889791"/>
+              <doubleBuffered value="false"/>
+              <font name="JetBrains Mono" size="12"/>
+              <foreground color="-2894893"/>
+              <opaque value="false"/>
+              <text value="Username: "/>
+            </properties>
+          </component>
+          <component id="6d3bc" class="javax.swing.JTextField" binding="portTextField">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-7829368"/>
+              <caretColor color="-7829368"/>
+              <font name="JetBrains Mono" size="12"/>
+            </properties>
+          </component>
+          <component id="568f8" class="javax.swing.JTextField" binding="groupIpTextField">
+            <constraints>
+              <grid row="1" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-7829368"/>
+              <caretColor color="-7829368"/>
+              <font name="JetBrains Mono" size="12"/>
+              <name value=""/>
+              <text value=""/>
+              <toolTipText value="(from 224.0.0.1 to 239.255.255.255)"/>
+            </properties>
+          </component>
+          <component id="57352" class="javax.swing.JLabel" binding="groupIPLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="JetBrains Mono" size="12"/>
+              <foreground color="-2894893"/>
+              <text value="Group IP: "/>
+            </properties>
+          </component>
+          <component id="bf6c9" class="javax.swing.JButton" binding="leaveButton">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-3370546"/>
+              <font name="JetBrains Mono" size="14"/>
+              <foreground color="-14079703"/>
+              <label value="Leave"/>
+              <text value="Leave"/>
+            </properties>
+          </component>
+          <component id="65e92" class="javax.swing.JButton" binding="joinButton">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-3370546"/>
+              <font name="JetBrains Mono" size="14"/>
+              <foreground color="-14079703"/>
+              <label value="Join"/>
+              <opaque value="true"/>
+              <selected value="false"/>
+              <text value="Join"/>
+            </properties>
+          </component>
+          <component id="cf5b2" class="javax.swing.JLabel" binding="portLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="JetBrains Mono" size="12"/>
+              <foreground color="-2894893"/>
+              <text value="Port: "/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="5694d" binding="msgPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="20" left="20" bottom="20" right="20"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-15311013"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="d48" class="javax.swing.JTextField" binding="msgTextField">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-7829368"/>
+              <font name="JetBrains Mono" size="14"/>
+            </properties>
+          </component>
+          <component id="17d67" class="javax.swing.JButton" binding="sendButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-3370546"/>
+              <font name="JetBrains Mono" size="14"/>
+              <foreground color="-14079703"/>
+              <text value="Send"/>
+            </properties>
+          </component>
+          <scrollpane id="38b0d" binding="SrollTextArea">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <autoscrolls value="true"/>
+              <background color="-11889791"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="9e112" class="javax.swing.JTextArea" binding="msgTextArea">
+                <constraints/>
+                <properties>
+                  <background color="-7829368"/>
+                  <editable value="false"/>
+                  <font name="JetBrains Mono" size="14"/>
+                  <foreground color="-14079703"/>
+                  <inheritsPopupMenu value="true"/>
+                  <lineWrap value="false"/>
+                  <margin top="5" left="5" bottom="5" right="5"/>
+                  <opaque value="true"/>
+                  <wrapStyleWord value="false"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+    </children>
   </grid>
 </form>
