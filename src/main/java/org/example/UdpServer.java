@@ -21,7 +21,7 @@ public class UdpServer extends Thread{
 
     public void run(){
         while (!Thread.interrupted()) {
-            try{
+            try {
                 DatagramPacket received = new DatagramPacket(buf, buf.length);
                 socket.receive(received);
                 String msg = new String(buf, "UTF-8");

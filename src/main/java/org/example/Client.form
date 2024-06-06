@@ -33,7 +33,7 @@
               </grid>
             </constraints>
             <properties>
-              <background color="-7829368"/>
+              <background color="-5131855"/>
               <font name="JetBrains Mono" size="12"/>
             </properties>
           </component>
@@ -57,7 +57,7 @@
               </grid>
             </constraints>
             <properties>
-              <background color="-7829368"/>
+              <background color="-5131855"/>
               <caretColor color="-7829368"/>
               <font name="JetBrains Mono" size="12"/>
             </properties>
@@ -69,7 +69,7 @@
               </grid>
             </constraints>
             <properties>
-              <background color="-7829368"/>
+              <background color="-5131855"/>
               <caretColor color="-7829368"/>
               <font name="JetBrains Mono" size="12"/>
               <name value=""/>
@@ -142,7 +142,7 @@
               </grid>
             </constraints>
             <properties>
-              <background color="-7829368"/>
+              <background color="-5131855"/>
               <font name="JetBrains Mono" size="14"/>
             </properties>
           </component>
@@ -170,7 +170,7 @@
               <component id="9e112" class="javax.swing.JTextArea" binding="msgTextArea">
                 <constraints/>
                 <properties>
-                  <background color="-7829368"/>
+                  <background color="-5131855"/>
                   <editable value="false"/>
                   <font name="JetBrains Mono" size="14"/>
                   <foreground color="-14079703"/>

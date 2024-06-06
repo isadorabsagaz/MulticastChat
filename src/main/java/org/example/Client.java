@@ -25,11 +25,11 @@ public class Client extends JFrame{
     private JLabel usernameLabel;
     private JLabel portLabel;
     private JLabel groupIPLabel;
+    private JScrollPane SrollTextArea;
     private JTextArea msgTextArea;
     private JTextField msgTextField;
     private JButton sendButton;
     private JPanel msgPanel;
-    private JScrollPane SrollTextArea;
     private String username;
     private int port;
     private String groupIp;
