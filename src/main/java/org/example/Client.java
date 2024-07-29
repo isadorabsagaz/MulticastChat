@@ -50,7 +50,7 @@ public class Client extends JFrame{
                 } else username = usernameTextField.getText();
 
                 if (portTextField.getText().isEmpty()) {
-                    port = 5000;
+                    port = 5700;
                 } else port = Integer.parseInt(portTextField.getText());
 
                 if (groupIpTextField.getText().isEmpty()){
@@ -95,6 +95,17 @@ public class Client extends JFrame{
             }
         });
     }
+
+    private void sendJsonToServer(String message){
+        try {
+            JSONObject jsonObj = createJson(message);
+            byte[] buf = jsonObj.toString().getBytes("UTF-8");
+            DatagramPacket packet = new DatagramPacket(buf, buf.length, group, port);
+            socket.send(packet);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
     private JSONObject createJson(String message){
         JSONObject jsonObj = new JSONObject();
         DateTimeFormatter date = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -107,23 +118,12 @@ public class Client extends JFrame{
         return jsonObj;
     }
 
-    private void sendJsonToServer(String message){
-        try {
-            JSONObject jsonObj = createJson(message);
-            byte[] buf = jsonObj.toString().getBytes("UTF-8");
-            DatagramPacket packet = new DatagramPacket(buf, buf.length, group, port);
-            socket.send(packet);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
     public static void main(String[] args) {
         JFrame frame = new JFrame("- Multicast Chat -");
         frame.setContentPane(new Client().clientPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setBounds(450, 175, 600, 500);
+        frame.setLocationRelativeTo(null);
+        frame.setSize(600, 500);
         frame.setVisible(true);
     }
 }
